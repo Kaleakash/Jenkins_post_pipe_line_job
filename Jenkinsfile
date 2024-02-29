@@ -1,11 +1,26 @@
 pipeline {
     agent any
     stages {
-        stage('Test') {
-            steps {
-                sh 'echo "Fail!"; exit 1'
+        stage("version of software"){
+            steps{
+                sh "java --version"
             }
         }
+        stage("compile java program"){
+            steps{
+                sh "javac Demo.java"
+            }
+        }
+        stage("run the java program"){
+            steps{
+                sh "java Demo"
+            }
+        }
+        // stage('Test') {
+        //     steps {
+        //         sh 'echo "Fail!"; exit 1'
+        //     }
+        // }
     }
     post {
         always {
