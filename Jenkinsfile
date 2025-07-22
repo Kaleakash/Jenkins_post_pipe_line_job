@@ -7,6 +7,11 @@ pipeline {
                 bat "java --version"
             }
         }
+        stage("remove .class file"){
+            steps{
+                bat "del Demo.class"
+            }
+        }
         stage("compile java program"){
             steps{
                 //sh "javac Demo.java"
