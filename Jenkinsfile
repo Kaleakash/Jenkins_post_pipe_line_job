@@ -24,11 +24,7 @@ pipeline {
                 bat "java Demo"
             }
         }
-        stage('Fail Stage') {
-                steps {
-                bat 'echo "Fail!"; exit 1'
-                }
-            }
+
     }
     post {
         always {
