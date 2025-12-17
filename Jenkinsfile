@@ -11,6 +11,7 @@ pipeline {
             steps{
                 //bat "del Demo.class"
                 //rm 'Demo.class'
+                echo 'code to delete the file'
             }
         }
         stage("compile java program"){
