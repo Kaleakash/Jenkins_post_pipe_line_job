@@ -3,25 +3,26 @@ pipeline {
     stages {
         stage("version of software"){
             steps{
-                //sh "java --version"
-                bat "java --version"
+                sh "java --version"
+                //bat "java --version"
             }
         }
         stage("remove .class file"){
             steps{
-                bat "del Demo.class"
+                //bat "del Demo.class"
+                rm 'Demo.class'
             }
         }
         stage("compile java program"){
             steps{
-                //sh "javac Demo.java"
-                bat "javac Demo.java"
+                sh "javac Demo.java"
+                //bat "javac Demo.java"
             }
         }
         stage("run the java program"){
             steps{
-                //sh "java Demo"
-                bat "java Demo"
+                sh "java Demo"
+                //bat "java Demo"
             }
         }
 
