@@ -1,7 +1,7 @@
 public class Demo {
     public static void main(String[] args) {
         System.out.println("Welcome to Simple Jenkin Job");
-        System.out.println("jenkine pipeline jobs")
+        System.out.println("jenkine pipeline jobs"
        
     }
 }
