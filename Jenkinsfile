@@ -10,7 +10,7 @@ pipeline {
         stage("remove .class file"){
             steps{
                 //bat "del Demo.class"
-                rm 'Demo.class'
+                //rm 'Demo.class'
             }
         }
         stage("compile java program"){
